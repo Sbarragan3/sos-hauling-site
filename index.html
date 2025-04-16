@@ -8,74 +8,36 @@
   <meta name="keywords" content="SOS Hauling, hauling, landscaping, demolition, handyman, Ventura, Santa Barbara, Los Angeles" />
   <meta name="author" content="SOS Hauling" />
   <title>SOS Hauling | Home</title>
+  <link rel="stylesheet" href="styles.css">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f6fef9;
-      color: #333;
-    }
-    nav {
-      background-color: #cce5cc;
-      padding: 1rem;
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-    nav a {
-      text-decoration: none;
-      color: #064420;
-      font-weight: bold;
-    }
-    nav a:hover,
-    nav a:focus {
-      text-decoration: underline;
-    }
     header {
       padding: 4rem 2rem;
-      background: url('images/hero.jpg') center/cover no-repeat;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/hero.jpg') center/cover no-repeat;
       text-align: center;
-      color: #fff;
-      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+      color: #fefefe;
     }
     header h1 {
       font-size: 3rem;
       margin: 0 0 1rem;
     }
     header p {
-      font-size: 1.25rem;
+      font-size: 1.3rem;
       margin: 0 auto;
       max-width: 700px;
     }
-    .content {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-      text-align: center;
+    .cta {
+      margin-top: 2rem;
     }
-    .content h2 {
-      color: #2e7d32;
-      font-size: 2rem;
+    .cta a {
+      background-color: #4caf50;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
     }
-    .content p {
-      font-size: 1.1rem;
-      line-height: 1.7;
-      margin-top: 1rem;
-    }
-    footer {
-      background-color: #cce5cc;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-    }
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2.2rem;
-      }
-      .content h2 {
-        font-size: 1.5rem;
-      }
+    .cta a:hover {
+      background-color: #388e3c;
     }
   </style>
 </head>
@@ -93,7 +55,10 @@
 
   <header>
     <h1>Welcome to SOS Hauling</h1>
-    <p>Local. Reliable. Hardworking. 20+ years of honest service in hauling, landscaping, demolition, fencing, and more.</p>
+    <p>20+ years of reliable service in hauling, landscaping, demolition, fencing, and more. Locally owned. Community trusted. Always here when you need us.</p>
+    <div class="cta">
+      <a href="services.html">Explore Our Services</a>
+    </div>
   </header>
 
   <main class="content">
