@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | SOS Hauling</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav aria-label="Main Navigation">
+    <a href="index.html">
+      <img src="logo.png" alt="SOS Hauling logo" class="logo">
+    </a>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="handyman.html">Handyman</a>
+    <a href="landscaping.html">Landscaping</a>
+    <a href="contact.html" aria-current="page">Contact</a>
+    <a href="about.html">About Us</a>
+    <a href="gallery.html">Gallery</a>
+  </nav>
+
+  <main class="container">
+    <h1>Contact Us</h1>
+    <p>Call or text us anytime at <strong>(805) 414-1679</strong> — we’re open 24/7 and happy to help.</p>
+
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="thank-you.html">
+      <input type="hidden" name="form-name" value="contact">
+      <input type="hidden" name="bot-field">
+
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="details">What do you need done?</label>
+      <textarea id="details" name="details" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+
+  <footer>
+    &copy; 2025 SOS Hauling. Proudly serving Santa Barbara, Ventura, and Los Angeles Counties. Open 24/7.
+  </footer>
+</body>
+</html>
