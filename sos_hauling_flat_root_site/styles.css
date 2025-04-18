@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background:
+    url('tree-left.png') left top repeat-y,
+    url('tree-right.png') right top repeat-y,
+    #f6fef9;
+  background-size: 80px auto;
+  color: #333;
+}
+
+nav {
+  background-color: #cce5cc;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #064420;
+  font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  background-color: #ffffffcc;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #cce5cc;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.logo {
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
