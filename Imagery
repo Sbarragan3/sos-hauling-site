@@ -1,0 +1,90 @@
+/* Global Image Styles */
+img {
+    max-width: 100%; /* Ensure images scale properly */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Soft rounded corners for all images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover Effects for Images */
+img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Gallery Grid Styles */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    width: 90%; /* Center gallery grid */
+}
+
+.gallery-grid img {
+    border-radius: 12px; /* More rounded corners for gallery images */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* A bit more shadow for gallery images */
+}
+
+/* Featured Images or Hero Section */
+.hero-image {
+    width: 100%;
+    height: 400px; /* Set a fixed height */
+    object-fit: cover; /* Ensures image covers the area without stretching */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Soft shadow for a prominent feature */
+}
+
+/* Full Width Background Image */
+.background-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover; /* Ensures background image covers full container */
+    background-position: center;
+    border-radius: 8px;
+}
+
+/* Circle or Rounded Image */
+.rounded-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Circular image */
+    object-fit: cover; /* Maintain aspect ratio for the circle */
+    border: 5px solid #fff; /* White border around circular image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Image for Cards (e.g., Service Section or Testimonials) */
+.card-image {
+    width: 100%;
+    height: 180px; /* Fixed height for card images */
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Images */
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for Image Lightbox (if you plan to use it) */
+.lightbox img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Images within Text Sections */
+.text-images {
+    max-width: 80%; /* Keep images within text sections at a good size */
+    margin: 10px auto;
+    display: block;
+}
