@@ -24,3 +24,75 @@
     </div>
 </body>
 </html>
+
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    height: 100%; /* Full height */
+    width: 250px; /* Fixed width for the sidebar */
+    position: fixed; /* Make it fixed on the left side */
+    top: 0;
+    left: 0;
+    background-color: #4caf50; /* Sidebar background color */
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.sidebar nav ul {
+    list-style-type: none; /* Remove default list bullets */
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 20px 0; /* Space between the links */
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for links */
+.sidebar nav ul li a:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Content Area */
+.content {
+    margin-left: 250px; /* Push the content to the right of the sidebar */
+    padding: 20px;
+    background-color: #f4f4f4; /* Light background color for content */
+}
+
+/* Make the sidebar responsive */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 200px; /* Slightly smaller sidebar on smaller screens */
+    }
+
+    .content {
+        margin-left: 200px; /* Adjust content to fit the sidebar */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sidebar {
+        width: 100%; /* Full-width sidebar on mobile */
+        height: auto; /* Allow the sidebar to shrink in height */
+    }
+
+    .content {
+        margin-left: 0; /* Content will no longer be pushed */
+    }
+}
+
