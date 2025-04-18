@@ -11,11 +11,16 @@ body {
 
 nav {
   background-color: #cce5cc;
-  padding: 1rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  flex-wrap: nowrap;
+}
+
+nav .nav-links {
+  display: flex;
   gap: 1rem;
-  flex-wrap: wrap;
 }
 
 nav a {
@@ -32,14 +37,13 @@ nav a:focus {
 .logo {
   height: 40px;
   vertical-align: middle;
-  margin-right: 10px;
 }
 
 .container {
   max-width: 900px;
   margin: auto;
   padding: 2rem;
-  background-color: #ffffffcc; /* semi-transparent white to stand out from trees */
+  background-color: #ffffffcc;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
@@ -72,47 +76,16 @@ footer {
   font-size: 0.9rem;
 }
 
-form {
-  background-color: #fff;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-label {
-  display: block;
-  margin-top: 1rem;
-  font-weight: bold;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 0.75rem;
-  margin-top: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
-}
-
-button {
-  margin-top: 1.5rem;
-  padding: 0.75rem 1.5rem;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #388e3c;
-}
-
 @media (max-width: 600px) {
   nav {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
   }
 
   .logo {
@@ -121,10 +94,6 @@ button:hover {
 
   h1 {
     font-size: 2rem;
-  }
-
-  p, li {
-    font-size: 1rem;
   }
 
   .container {
