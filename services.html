@@ -8,85 +8,11 @@
   <meta name="keywords" content="SOS Hauling services, hauling, demolition, landscaping, fencing, handyman, bobcat, Ventura, Santa Barbara, Los Angeles" />
   <meta name="author" content="SOS Hauling" />
   <title>Services | SOS Hauling</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f6fef9;
-      color: #333;
-    }
-    nav {
-      background-color: #cce5cc;
-      padding: 1rem;
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-    nav a {
-      text-decoration: none;
-      color: #064420;
-      font-weight: bold;
-    }
-    nav a:hover,
-    nav a:focus {
-      text-decoration: underline;
-    }
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 2rem;
-    }
-    h1 {
-      color: #2e7d32;
-      font-size: 2.5rem;
-      text-align: center;
-    }
-    section {
-      margin-top: 2rem;
-    }
-    section img {
-      width: 100%;
-      max-width: 400px;
-      display: block;
-      margin: 1rem auto;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    h2 {
-      color: #388e3c;
-      font-size: 1.8rem;
-      margin-top: 1.5rem;
-    }
-    p {
-      font-size: 1rem;
-      line-height: 1.6;
-    }
-    footer {
-      background-color: #cce5cc;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-    }
-    @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-        align-items: center;
-      }
-      h1 {
-        font-size: 2rem;
-      }
-      h2 {
-        font-size: 1.4rem;
-      }
-      p {
-        font-size: 0.95rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css"> <!-- Ensure consistency with other pages -->
 </head>
 
 <body>
+  <!-- Navigation Bar -->
   <nav aria-label="Main Navigation">
     <a href="index.html">Home</a>
     <a href="services.html" aria-current="page">Services</a>
@@ -97,49 +23,61 @@
     <a href="gallery.html">Gallery</a>
   </nav>
 
-  <div class="container">
+  <!-- Main Content -->
+  <main class="container">
     <h1>Our Services</h1>
 
-    <section>
-      <h2>Hauling</h2>
-      <img src="images/hauling.jpg" alt="SOS hauling truck loading materials">
-      <p>Efficient, affordable hauling services for residential and commercial needs. Whether you're cleaning out a garage or need debris removed from a job site, we handle it all with care and speed.</p>
-    </section>
+    <!-- Service Sections -->
+    <div class="services-grid">
+      <section>
+        <h2>Hauling</h2>
+        <img src="images/hauling.jpg" alt="SOS hauling truck loading materials">
+        <p>Efficient, affordable hauling services for residential and commercial needs. Whether you're cleaning out a garage or need debris removed from a job site, we handle it all with care and speed.</p>
+      </section>
 
-    <section>
-      <h2>Demolition</h2>
-      <img src="images/demolition.jpg" alt="Demolition site in progress">
-      <p>We offer safe, reliable demolition services. From tearing down sheds to removing concrete patios, our team gets the job done cleanly and efficiently.</p>
-    </section>
+      <section>
+        <h2>Demolition</h2>
+        <img src="images/demolition.jpg" alt="Demolition site in progress">
+        <p>We offer safe, reliable demolition services. From tearing down sheds to removing concrete patios, our team gets the job done cleanly and efficiently.</p>
+      </section>
 
-    <section>
-      <h2>Fencing</h2>
-      <img src="images/fencing.jpg" alt="Freshly installed wood fence">
-      <p>Enhance your property with sturdy, good-looking fencing. We install wood, vinyl, chain-link, and ornamental fencing with precision and care.</p>
-    </section>
+      <section>
+        <h2>Fencing</h2>
+        <img src="images/fencing.jpg" alt="Freshly installed wood fence">
+        <p>Enhance your property with sturdy, good-looking fencing. We install wood, vinyl, chain-link, and ornamental fencing with precision and care.</p>
+      </section>
 
-    <section>
-      <h2>Bobcat Services</h2>
-      <img src="images/bobcat.jpg" alt="Bobcat moving dirt on construction site">
-      <p>Excavation, grading, site clearing, and material moving made simple with our expert Bobcat operation. Perfect for construction prep or landscaping needs.</p>
-    </section>
+      <section>
+        <h2>Bobcat Services</h2>
+        <img src="images/bobcat.jpg" alt="Bobcat moving dirt on construction site">
+        <p>Excavation, grading, site clearing, and material moving made simple with our expert Bobcat operation. Perfect for construction prep or landscaping needs.</p>
+      </section>
 
-    <section>
-      <h2>Landscaping</h2>
-      <img src="images/landscaping.jpg" alt="Beautiful landscaped yard">
-      <p>From dirt filling and leveling to full outdoor makeovers, we bring your yard dreams to life. Trust SOS for quality and curb appeal.</p>
-    </section>
+      <section>
+        <h2>Landscaping</h2>
+        <img src="images/landscaping.jpg" alt="Beautiful landscaped yard">
+        <p>From dirt filling and leveling to full outdoor makeovers, we bring your yard dreams to life. Trust SOS for quality and curb appeal.</p>
+      </section>
 
-    <section>
-      <h2>Handyman Services</h2>
-      <img src="images/handyman.jpg" alt="Handyman fixing exterior siding">
-      <p>Small repairs, odd jobs, and home improvements — we’ve got your back. We work hard, keep communication open, and don’t stop until the job is done right.</p>
-    </section>
-  </div>
+      <section>
+        <h2>Handyman Services</h2>
+        <img src="images/handyman.jpg" alt="Handyman fixing exterior siding">
+        <p>Small repairs, odd jobs, and home improvements — we’ve got your back. We work hard, keep communication open, and don’t stop until the job is done right.</p>
+      </section>
+    </div>
 
+    <!-- Call-to-Action Section -->
+    <div class="cta">
+      <p>Ready to get started? <a href="contact.html">Contact us now</a> for a free estimate on any of our services!</p>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
   <footer>
     &copy; 2025 SOS Hauling. Proudly serving Santa Barbara, Ventura, and Los Angeles Counties. Open 24/7.
   </footer>
+
 </body>
 
 </html>
