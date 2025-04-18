@@ -8,67 +8,11 @@
   <meta name="keywords" content="gallery, SOS Hauling projects, before and after, fencing, landscaping, demolition" />
   <meta name="author" content="SOS Hauling" />
   <title>Gallery | SOS Hauling</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f6fef9;
-      color: #333;
-    }
-    nav {
-      background-color: #cce5cc;
-      padding: 1rem;
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-    nav a {
-      text-decoration: none;
-      color: #064420;
-      font-weight: bold;
-    }
-    nav a:hover,
-    nav a:focus {
-      text-decoration: underline;
-    }
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 2rem;
-    }
-    h1 {
-      color: #2e7d32;
-      font-size: 2.5rem;
-      text-align: center;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-      margin-top: 2rem;
-    }
-    .gallery img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    }
-    footer {
-      background-color: #cce5cc;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-    }
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css"> <!-- Make sure you use the same external CSS file -->
 </head>
 
 <body>
+  <!-- Navigation Bar -->
   <nav aria-label="Main Navigation">
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
@@ -79,6 +23,7 @@
     <a href="gallery.html" aria-current="page">Gallery</a>
   </nav>
 
+  <!-- Main Content -->
   <main class="container">
     <h1>Project Gallery</h1>
     <div class="gallery">
@@ -91,9 +36,11 @@
     </div>
   </main>
 
+  <!-- Footer -->
   <footer>
     &copy; 2025 SOS Hauling. Proudly serving Santa Barbara, Ventura, and Los Angeles Counties. Open 24/7.
   </footer>
+
 </body>
 
 </html>
